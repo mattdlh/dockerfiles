@@ -1,5 +1,4 @@
-FROM seapy/ruby:2.2.0
-MAINTAINER ChangHoon Jeong <iamseapy@gmail.com>
+FROM mdlh/ruby:2.2.0
 
 RUN apt-get update
 
@@ -45,4 +44,4 @@ ADD Procfile /app/Procfile
 
 ENV RAILS_ENV production
 
-CMD bundle exec rake assets:precompile && foreman start -f Procfile
+CMD foreman start -f Procfile
