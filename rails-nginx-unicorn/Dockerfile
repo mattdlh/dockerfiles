@@ -41,7 +41,6 @@ ADD unicorn.rb /app/config/unicorn.rb
 
 # Add sidekiq config and 
 ADD sidekiq.yml /app/config/sidekiq.yml
-RUN touch /app/log/sidekiq.log
 
 # Add default foreman config
 ADD Procfile /app/Procfile
